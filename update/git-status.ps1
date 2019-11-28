@@ -1,7 +1,3 @@
-param (
-    [Parameter(Mandatory=$true)][string]$m
-)
-
 # $script_root = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 # $swarm_root = Split-Path -Parent -Path $script_root
 $swarm_root = $PWD
@@ -14,29 +10,19 @@ Write-Output "$m"
 
 
 Set-Location $api_root
-git add -A
-git commit -m "$m"
-git push
-
-Set-Location $website_root
-git add -A
-git commit -m "$m"
-git push
+git status
 
 Set-Location $database_root
-git add -A
-git commit -m "$m"
-git push
+git status
 
 Set-Location $iot_root
-git add -A
-git commit -m "$m"
-git push
+git status
 
 Set-Location $scripts_root
-git add -A
-git commit -m "$m"
-git push
+git status
+
+Set-Location $website_root
+git status
 
 
 Set-Location $swarm_root

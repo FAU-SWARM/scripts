@@ -3,6 +3,7 @@
 $swarm_root = $PWD
 $api_root = Resolve-Path "$swarm_root/api"
 $database_root = Resolve-Path "$swarm_root/database"
+$iot_root = Resolve-Path "$swarm_root/iot"
 $scripts_root = Resolve-Path "$swarm_root/scripts"
 $website_root = Resolve-Path "$swarm_root/website"
 $venv_activate = Resolve-Path "$scripts_root/venv/Scripts/activate.ps1"
@@ -11,10 +12,16 @@ $venv_activate = Resolve-Path "$scripts_root/venv/Scripts/activate.ps1"
 Set-Location $api_root
 Invoke-Expression "git pull"
 
-Set-Location $website_root
+Set-Location $database_root
 Invoke-Expression "git pull"
 
-Set-Location $database_root
+Set-Location $iot_root
+Invoke-Expression "git pull"
+
+Set-Location $scripts_root
+Invoke-Expression "git pull"
+
+Set-Location $website_root
 Invoke-Expression "git pull"
 
 Set-Location $swarm_root
