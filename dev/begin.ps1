@@ -10,5 +10,5 @@ $venv_activate = Resolve-Path "$scripts_root/venv/Scripts/activate.ps1"
 Write-Output $website_root $api_root $venv_activate
 
 
-Write-Output dev-api ; Start-Process powershell -ArgumentList "-noexit", "& $venv_activate ; python $(Resolve-Path "$api_root/main.py") --dev --debug --local"
+Write-Output dev-api ; Start-Process powershell -ArgumentList "-noexit", "& $venv_activate ; python $(Resolve-Path "$api_root/main.py") --dev --debug"
 Write-Output dev-website ; Start-Process powershell -ArgumentList "-noexit", "& $venv_activate ; cd $website_root ; npm run start"
