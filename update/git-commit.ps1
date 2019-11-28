@@ -15,22 +15,22 @@ Write-Output "$m"
 Set-Location $api_root
 git add -A
 git commit -m "$m"
-Write-Output "shit?"
+git push
 
 Set-Location $website_root
 git add -A
 git commit -m "$m"
-Write-Output "shit?"
+git push
 
 Set-Location $database_root
 git add -A
 git commit -m "$m"
-Write-Output "shit?"
+git push
 
 Set-Location $scripts_root
 git add -A
 git commit -m "$m"
-Write-Output "shit?"
+git push
 
 
 Set-Location $swarm_root
