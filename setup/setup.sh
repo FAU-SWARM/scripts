@@ -1,4 +1,4 @@
-current_dir = $(pwd)
+current_dir=$(pwd)
 
 mkdir -p /opt/repos/swarm
 cd /opt/repos/swarm
