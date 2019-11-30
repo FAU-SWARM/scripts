@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 current_dir=$(pwd)
 
 mkdir -p /opt/repos/swarm
