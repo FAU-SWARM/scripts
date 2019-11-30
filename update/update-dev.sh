@@ -1,3 +1,5 @@
+current_dir = $(pwd)
+
 mkdir -p /opt/repos/swarm
 cd /opt/repos/swarm
 
@@ -25,3 +27,5 @@ python -m pip install -e database
 python -m pip install -e api
 python -m pip install -e iot
 
+
+cd $current_dir
