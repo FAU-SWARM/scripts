@@ -12,9 +12,9 @@ python3 -m virtualenv venv
 
 
 source venv/bin/activate
-python3 -m pip install -r scripts/requirements-dev.txt
-python3 -m pip install -e database
-python3 -m pip install -e api
-python3 -m pip install -e iot
+python -m pip install -r scripts/requirements-dev.txt
+python -m pip install -e database
+python -m pip install -e api
+python -m pip install -e iot
 
 
