@@ -32,10 +32,10 @@ git clone https://github.com/FAU-SWARM/iot.git
 git clone https://github.com/FAU-SWARM/website.git
 
 venv/Scripts/activate
-pip install -r database/requirements.txt
+pip install -r scripts/requirements-dev.txt
 pip install -e database
-pip install -r api/requirements.txt
 pip install -e api
+pip install -e iot
 cd website
 npm install
 cd ../

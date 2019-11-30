@@ -5,7 +5,7 @@ $api_root = Resolve-Path "$swarm_root/api"
 $database_root = Resolve-Path "$swarm_root/database"
 $scripts_root = Resolve-Path "$swarm_root/scripts"
 $website_root = Resolve-Path "$swarm_root/website"
-$venv_activate = Resolve-Path "$scripts_root/venv/Scripts/activate.ps1"
+$venv_activate = Resolve-Path "$swarm_root/venv/Scripts/activate.ps1"
 
 Write-Output $website_root $api_root $venv_activate
 
