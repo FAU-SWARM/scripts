@@ -1,9 +1,6 @@
 #!/bin/bash
 current_dir=$(pwd)
 
-mkdir -p /opt/repos/swarm
-cd /opt/repos/swarm
-
 
 cd api
 git pull
