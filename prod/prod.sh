@@ -5,6 +5,6 @@ current_dir=$(pwd)
 cd /opt/repos/swarm
 sudo cp -va website/dist/swarm-website/. /var/www/html/
 python api/main.py &
-python iot/examples/computer-monitor.py -s 5 --project demo --device $(hostname)-computer-stats --cache /var/log/iot/vm &
+python iot/examples/computer-monitor.py -s 120 --project demo --device $(hostname)-computer-stats --cache /var/log/iot/vm &
 
 cd $current_dir
